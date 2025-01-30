@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <!-- icon -->
+    <link rel="icon" type="gif" href="img/icons8-calculator.gif">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <div class="all bg-secondary">
+      <div class="container  p-4">
+        <div class="head second bg-dark p-4 mb-5 rounded-5">
+          <h1 class="text-light text-center">
+            <img src="img/icons8-calculator.gif" width="50px" alt="">
+            CALCULATOR</h1>
+        </div>
+        <div class="mainBody second">
+          <input type="text" class="w-100 p-5 rounded-5 fs-1 inptText" id="inptNum" readonly placeholder="CALCULATOR">
+          <div class="nums mt-1 row justify-content-center align-content-center">
+            <div id="numberAC" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">AC</div>
+            <div id="numberREMOVE" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">
+              <i class="fa-solid fa-delete-left"></i>
+            </div>
+            <div id="numberMOD" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">%</div>
+            <div id="numberOVER" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">/</div>
+            <br>
+            <br>
+            <hr>
+            <div id="number7" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">7</div>
+            <div id="number8" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">8</div>
+            <div id="number9" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">9</div>
+            <div id="numberBY" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">x</div>
+            <br>
+            <br>
+            <hr>
+            <div id="number4" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">4</div>
+            <div id="number5" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">5</div>
+            <div id="number6" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">6</div>
+            <div id="numberMIN" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">-</div>
+            <br>
+            <br>
+            <hr>
+            <div id="number1" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">1</div>
+            <div id="number2" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">2</div>
+            <div id="number3" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">3</div>
+            <div id="numberPLS" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-primary fs-3">+</div>
+            <br>
+            <br>
+            <hr>
+            <div id="numberOVER100" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">0</div>
+            <div id="number0" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">00</div>
+            <div id="numberDOT" class="col-2 align-content-center col-md-2 m-2 text-center bg-dark text-light fs-3">.</div>
+            <div id="numberEQUAL" class="col-2 align-content-center col-md-2 m-2 text-center bg-primary text-light fs-3">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

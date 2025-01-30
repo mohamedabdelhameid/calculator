@@ -1,0 +1,50 @@
+.all{
+  min-height: 100vh;
+}
+.second{
+  min-width: 250px;
+}
+.inptText{
+  border-style: none;
+}
+.nums div{
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px !important;
+  height: 100px !important;
+}
+hr{
+  color: transparent !important;
+}
+.head{
+  display: none;
+}
+@media (max-width: 560px) {
+  .head{
+    display: block;
+  }
+  .nums div{
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+@media (min-width: 1440px) {
+    .head{
+    display: block;
+  }
+}
+@media (min-width: 561px) and (max-width: 1439px) {
+  input {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 40px; /* مكان للصورة */
+    background: url('../img/icons8-calculator.gif') no-repeat left center; /* ضع الصورة كخلفية */
+    background-size: 40px 40px; /* حجم الصورة */
+    background-color: aliceblue;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+}

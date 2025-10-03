@@ -38,13 +38,14 @@ hr{
     width: 300px;
     height: 40px;
     font-size: 16px;
-    padding-left: 40px; /* مكان للصورة */
-    background: url('../img/icons8-calculator.gif') no-repeat left center; /* ضع الصورة كخلفية */
-    background-size: 40px 40px; /* حجم الصورة */
+    padding-left: 40px;
+    background: url('../img/icons8-calculator.gif') no-repeat left center;
+    background-size: 40px 40px;
     background-color: aliceblue;
   }
   
   input::placeholder {
     color: gray;
   }
+
 }

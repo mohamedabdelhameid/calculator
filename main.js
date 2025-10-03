@@ -18,9 +18,8 @@ let over = document.getElementById("numberOVER");
 let models = document.getElementById("numberMOD");
 let dlte = document.getElementById("numberREMOVE");
 let dlteAll = document.getElementById("numberAC");
-let isCalculated = false; // متغير لتحديد إذا تم الحساب
+let isCalculated = false;
 
-// Function to append numbers to the input field
 function writeNumber(num) {
   const inputField = document.getElementById("inptNum");
   inputField.value += num;
@@ -30,16 +29,13 @@ let x = "*";
 
 function calculateResult() {
   const inputField = document.getElementById("inptNum");
-  let expression = inputField.value.trim();  // إزالة الفراغات
+  let expression = inputField.value.trim();
 
-  // حساب النتيجة مباشرة باستخدام eval()
   inputField.value = eval(expression);
 
-  setTimeout(function(){inputField.value = '' },3000)
 }
 
 
-// Adding event listeners to each number button
 document.getElementById("number0").addEventListener("click", function() {
   writeNumber(numZero);
 });
@@ -95,14 +91,13 @@ document.getElementById("numberEQUAL").addEventListener("click", function(){
   calculateResult();
 });
 
-// For clearing the input field
 document.getElementById("numberAC").addEventListener("click", function() {
   document.getElementById("inptNum").value = '';
 });
 
 
-// To delete a character from the input field
 document.getElementById("numberREMOVE").addEventListener("click", function() {
   const inputField = document.getElementById("inptNum");
   inputField.value = inputField.value.slice(0, -1);
+
 });
